@@ -1,0 +1,7 @@
+C:\Users\hocke\Desktop\School\MyFirstAzureWebApp\bin\Release\net6.0\publish\MyFirstAzureWebApp.exe
+C:\Users\hocke\Desktop\School\MyFirstAzureWebApp\bin\Release\net6.0\publish\appsettings.Development.json
+C:\Users\hocke\Desktop\School\MyFirstAzureWebApp\bin\Release\net6.0\publish\appsettings.json
+C:\Users\hocke\Desktop\School\MyFirstAzureWebApp\bin\Release\net6.0\publish\MyFirstAzureWebApp.dll
+C:\Users\hocke\Desktop\School\MyFirstAzureWebApp\bin\Release\net6.0\publish\MyFirstAzureWebApp.deps.json
+C:\Users\hocke\Desktop\School\MyFirstAzureWebApp\bin\Release\net6.0\publish\MyFirstAzureWebApp.runtimeconfig.json
+C:\Users\hocke\Desktop\School\MyFirstAzureWebApp\bin\Release\net6.0\publish\MyFirstAzureWebApp.pdb

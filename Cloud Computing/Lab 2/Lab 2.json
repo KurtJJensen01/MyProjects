@@ -1,0 +1,59 @@
+{
+  "properties": {
+    "sku": "Standard",
+    "provisioningState": "Succeeded",
+    "containers": [
+      {
+        "name": "mycontainer",
+        "properties": {
+          "image": "mcr.microsoft.com/azuredocs/aci-helloworld:latest",
+          "ports": [
+            {
+              "protocol": "TCP",
+              "port": 80
+            }
+          ],
+          "environmentVariables": [],
+          "instanceView": {
+            "restartCount": 0,
+            "currentState": {
+              "state": "Running",
+              "startTime": "2023-02-22T22:25:20.335Z",
+              "detailStatus": ""
+            }
+          },
+          "resources": {
+            "requests": {
+              "memoryInGB": 1.5,
+              "cpu": 1
+            }
+          }
+        }
+      }
+    ],
+    "initContainers": [],
+    "restartPolicy": "OnFailure",
+    "ipAddress": {
+      "ports": [
+        {
+          "protocol": "TCP",
+          "port": 80
+        }
+      ],
+      "ip": "20.253.57.167",
+      "type": "Public",
+      "dnsNameLabel": "mycontainer",
+      "fqdn": "mycontainer.d4c0b5b4f4gqckdy.eastus.azurecontainer.io"
+    },
+    "osType": "Linux",
+    "instanceView": {
+      "events": [],
+      "state": "Running"
+    }
+  },
+  "id": "/subscriptions/e7392181-4e5c-490b-995f-395051269a90/resourceGroups/rg-jensen/providers/Microsoft.ContainerInstance/containerGroups/mycontainer",
+  "name": "mycontainer",
+  "type": "Microsoft.ContainerInstance/containerGroups",
+  "location": "eastus",
+  "tags": {}
+}

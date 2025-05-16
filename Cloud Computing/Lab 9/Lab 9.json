@@ -1,0 +1,10 @@
+{
+    "id": "/subscriptions/e7392181-4e5c-490b-995f-395051269a90/resourceGroups/rg-jensen",
+    "name": "rg-jensen",
+    "type": "Microsoft.Resources/resourceGroups",
+    "location": "eastus",
+    "tags": {},
+    "properties": {
+        "provisioningState": "Succeeded"
+    }
+}

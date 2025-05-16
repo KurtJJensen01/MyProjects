@@ -1,0 +1,41 @@
+{
+    "sku": {
+        "name": "GP_Gen5",
+        "tier": "GeneralPurpose",
+        "family": "Gen5",
+        "capacity": 2
+    },
+    "kind": "v12.0,user,vcore",
+    "properties": {
+        "collation": "SQL_Latin1_General_CP1_CI_AS",
+        "maxSizeBytes": 34359738368,
+        "status": "Online",
+        "databaseId": "55abaa60-5e5a-4945-ae36-d025483222c3",
+        "creationDate": "2023-03-29T21:27:32.81Z",
+        "currentServiceObjectiveName": "GP_Gen5_2",
+        "requestedServiceObjectiveName": "GP_Gen5_2",
+        "defaultSecondaryLocation": "westus",
+        "catalogCollation": "SQL_Latin1_General_CP1_CI_AS",
+        "zoneRedundant": false,
+        "licenseType": "LicenseIncluded",
+        "maxLogSizeBytes": 193273528320,
+        "earliestRestoreDate": "2023-03-29T21:34:57Z",
+        "readScale": "Disabled",
+        "currentSku": {
+            "name": "GP_Gen5",
+            "tier": "GeneralPurpose",
+            "family": "Gen5",
+            "capacity": 2
+        },
+        "currentBackupStorageRedundancy": "Geo",
+        "requestedBackupStorageRedundancy": "Geo",
+        "maintenanceConfigurationId": "/subscriptions/e7392181-4e5c-490b-995f-395051269a90/providers/Microsoft.Maintenance/publicMaintenanceConfigurations/SQL_Default",
+        "isLedgerOn": false,
+        "isInfraEncryptionEnabled": false
+    },
+    "location": "eastus",
+    "tags": {},
+    "id": "/subscriptions/e7392181-4e5c-490b-995f-395051269a90/resourceGroups/rg-jensen/providers/Microsoft.Sql/servers/mysqlserver123456123454321/databases/lab 5",
+    "name": "lab 5",
+    "type": "Microsoft.Sql/servers/databases"
+}

@@ -1,0 +1,203 @@
+{
+    "properties": {
+        "provisioningState": "Succeeded",
+        "createdTime": "2023-03-29T22:49:12.3336318Z",
+        "changedTime": "2023-03-29T23:17:36.5578488Z",
+        "state": "Enabled",
+        "version": "08585214750289286068",
+        "accessEndpoint": "https://prod-63.eastus.logic.azure.com:443/workflows/a9a72bdd593f437a863c7f03efd339de",
+        "definition": {
+            "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+            "contentVersion": "1.0.0.0",
+            "parameters": {
+                "$connections": {
+                    "defaultValue": {},
+                    "type": "Object"
+                }
+            },
+            "triggers": {
+                "When_a_feed_item_is_published": {
+                    "recurrence": {
+                        "frequency": "Minute",
+                        "interval": 3
+                    },
+                    "evaluatedRecurrence": {
+                        "frequency": "Minute",
+                        "interval": 3
+                    },
+                    "splitOn": "@triggerBody()?['value']",
+                    "type": "ApiConnection",
+                    "inputs": {
+                        "host": {
+                            "connection": {
+                                "name": "@parameters('$connections')['rss']['connectionId']"
+                            }
+                        },
+                        "method": "get",
+                        "path": "/OnNewFeed",
+                        "queries": {
+                            "feedUrl": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
+                            "sinceProperty": "PublishDate"
+                        }
+                    }
+                }
+            },
+            "actions": {
+                "Send_an_email_(V2)": {
+                    "runAfter": {},
+                    "type": "ApiConnection",
+                    "inputs": {
+                        "body": {
+                            "Body": "<p>Hi Kurt&nbsp;</p>",
+                            "Importance": "Normal",
+                            "Subject": "Lab 5.5",
+                            "To": "kjjensen01@indianatech.net"
+                        },
+                        "host": {
+                            "connection": {
+                                "name": "@parameters('$connections')['office365']['connectionId']"
+                            }
+                        },
+                        "method": "post",
+                        "path": "/v2/Mail"
+                    }
+                }
+            },
+            "outputs": {}
+        },
+        "parameters": {
+            "$connections": {
+                "value": {
+                    "office365": {
+                        "connectionId": "/subscriptions/e7392181-4e5c-490b-995f-395051269a90/resourceGroups/rg-jensen/providers/Microsoft.Web/connections/office365",
+                        "connectionName": "office365",
+                        "id": "/subscriptions/e7392181-4e5c-490b-995f-395051269a90/providers/Microsoft.Web/locations/eastus/managedApis/office365"
+                    },
+                    "rss": {
+                        "connectionId": "/subscriptions/e7392181-4e5c-490b-995f-395051269a90/resourceGroups/rg-jensen/providers/Microsoft.Web/connections/rss",
+                        "connectionName": "rss",
+                        "id": "/subscriptions/e7392181-4e5c-490b-995f-395051269a90/providers/Microsoft.Web/locations/eastus/managedApis/rss"
+                    }
+                }
+            }
+        },
+        "endpointsConfiguration": {
+            "workflow": {
+                "outgoingIpAddresses": [
+                    {
+                        "address": "13.92.98.111"
+                    },
+                    {
+                        "address": "40.121.91.41"
+                    },
+                    {
+                        "address": "40.114.82.191"
+                    },
+                    {
+                        "address": "23.101.139.153"
+                    },
+                    {
+                        "address": "23.100.29.190"
+                    },
+                    {
+                        "address": "23.101.136.201"
+                    },
+                    {
+                        "address": "104.45.153.81"
+                    },
+                    {
+                        "address": "23.101.132.208"
+                    },
+                    {
+                        "address": "52.226.216.197"
+                    },
+                    {
+                        "address": "52.226.216.187"
+                    },
+                    {
+                        "address": "40.76.151.25"
+                    },
+                    {
+                        "address": "40.76.148.50"
+                    },
+                    {
+                        "address": "20.84.29.29"
+                    },
+                    {
+                        "address": "20.84.29.18"
+                    },
+                    {
+                        "address": "40.76.174.83"
+                    },
+                    {
+                        "address": "40.76.174.39"
+                    }
+                ],
+                "accessEndpointIpAddresses": [
+                    {
+                        "address": "137.135.106.54"
+                    },
+                    {
+                        "address": "40.117.99.79"
+                    },
+                    {
+                        "address": "40.117.100.228"
+                    },
+                    {
+                        "address": "137.116.126.165"
+                    },
+                    {
+                        "address": "52.226.216.209"
+                    },
+                    {
+                        "address": "40.76.151.124"
+                    },
+                    {
+                        "address": "20.84.29.150"
+                    },
+                    {
+                        "address": "40.76.174.148"
+                    }
+                ]
+            },
+            "connector": {
+                "outgoingIpAddresses": [
+                    {
+                        "address": "40.71.249.139"
+                    },
+                    {
+                        "address": "40.71.249.205"
+                    },
+                    {
+                        "address": "40.114.40.132"
+                    },
+                    {
+                        "address": "40.71.11.80/28"
+                    },
+                    {
+                        "address": "40.71.15.160/27"
+                    },
+                    {
+                        "address": "52.188.157.160"
+                    },
+                    {
+                        "address": "20.88.153.176/28"
+                    },
+                    {
+                        "address": "20.88.153.192/27"
+                    },
+                    {
+                        "address": "52.151.221.184"
+                    },
+                    {
+                        "address": "52.151.221.119"
+                    }
+                ]
+            }
+        }
+    },
+    "id": "/subscriptions/e7392181-4e5c-490b-995f-395051269a90/resourceGroups/rg-jensen/providers/Microsoft.Logic/workflows/JensenLogicApp",
+    "name": "JensenLogicApp",
+    "type": "Microsoft.Logic/workflows",
+    "location": "eastus"
+}

@@ -1,0 +1,71 @@
+{
+    "sku": {
+        "name": "Standard_RAGRS",
+        "tier": "Standard"
+    },
+    "kind": "StorageV2",
+    "id": "/subscriptions/e7392181-4e5c-490b-995f-395051269a90/resourceGroups/rg-jensen/providers/Microsoft.Storage/storageAccounts/ksjdfjnbkhjaliudhflkj",
+    "name": "ksjdfjnbkhjaliudhflkj",
+    "type": "Microsoft.Storage/storageAccounts",
+    "location": "eastus",
+    "tags": {},
+    "properties": {
+        "dnsEndpointType": "Standard",
+        "defaultToOAuthAuthentication": false,
+        "publicNetworkAccess": "Enabled",
+        "keyCreationTime": {
+            "key1": "2023-03-01T23:05:39.0977678Z",
+            "key2": "2023-03-01T23:05:39.0977678Z"
+        },
+        "allowCrossTenantReplication": true,
+        "privateEndpointConnections": [],
+        "minimumTlsVersion": "TLS1_2",
+        "allowBlobPublicAccess": true,
+        "allowSharedKeyAccess": true,
+        "networkAcls": {
+            "bypass": "AzureServices",
+            "virtualNetworkRules": [],
+            "ipRules": [],
+            "defaultAction": "Allow"
+        },
+        "supportsHttpsTrafficOnly": true,
+        "encryption": {
+            "requireInfrastructureEncryption": false,
+            "services": {
+                "file": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2023-03-01T23:05:39.1135923Z"
+                },
+                "blob": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2023-03-01T23:05:39.1135923Z"
+                }
+            },
+            "keySource": "Microsoft.Storage"
+        },
+        "accessTier": "Hot",
+        "provisioningState": "Succeeded",
+        "creationTime": "2023-03-01T23:05:38.9727719Z",
+        "primaryEndpoints": {
+            "dfs": "https://ksjdfjnbkhjaliudhflkj.dfs.core.windows.net/",
+            "web": "https://ksjdfjnbkhjaliudhflkj.z13.web.core.windows.net/",
+            "blob": "https://ksjdfjnbkhjaliudhflkj.blob.core.windows.net/",
+            "queue": "https://ksjdfjnbkhjaliudhflkj.queue.core.windows.net/",
+            "table": "https://ksjdfjnbkhjaliudhflkj.table.core.windows.net/",
+            "file": "https://ksjdfjnbkhjaliudhflkj.file.core.windows.net/"
+        },
+        "primaryLocation": "eastus",
+        "statusOfPrimary": "available",
+        "secondaryLocation": "westus",
+        "statusOfSecondary": "available",
+        "secondaryEndpoints": {
+            "dfs": "https://ksjdfjnbkhjaliudhflkj-secondary.dfs.core.windows.net/",
+            "web": "https://ksjdfjnbkhjaliudhflkj-secondary.z13.web.core.windows.net/",
+            "blob": "https://ksjdfjnbkhjaliudhflkj-secondary.blob.core.windows.net/",
+            "queue": "https://ksjdfjnbkhjaliudhflkj-secondary.queue.core.windows.net/",
+            "table": "https://ksjdfjnbkhjaliudhflkj-secondary.table.core.windows.net/"
+        }
+    }
+}
