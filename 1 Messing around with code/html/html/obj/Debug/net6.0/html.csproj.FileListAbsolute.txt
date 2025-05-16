@@ -1,0 +1,15 @@
+C:\Users\hocke\Desktop\School\1 Messing around with code\html\html\bin\Debug\net6.0\html.exe
+C:\Users\hocke\Desktop\School\1 Messing around with code\html\html\bin\Debug\net6.0\html.deps.json
+C:\Users\hocke\Desktop\School\1 Messing around with code\html\html\bin\Debug\net6.0\html.runtimeconfig.json
+C:\Users\hocke\Desktop\School\1 Messing around with code\html\html\bin\Debug\net6.0\html.dll
+C:\Users\hocke\Desktop\School\1 Messing around with code\html\html\bin\Debug\net6.0\ref\html.dll
+C:\Users\hocke\Desktop\School\1 Messing around with code\html\html\bin\Debug\net6.0\html.pdb
+C:\Users\hocke\Desktop\School\1 Messing around with code\html\html\obj\Debug\net6.0\html.csproj.AssemblyReference.cache
+C:\Users\hocke\Desktop\School\1 Messing around with code\html\html\obj\Debug\net6.0\html.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hocke\Desktop\School\1 Messing around with code\html\html\obj\Debug\net6.0\html.AssemblyInfoInputs.cache
+C:\Users\hocke\Desktop\School\1 Messing around with code\html\html\obj\Debug\net6.0\html.AssemblyInfo.cs
+C:\Users\hocke\Desktop\School\1 Messing around with code\html\html\obj\Debug\net6.0\html.csproj.CoreCompileInputs.cache
+C:\Users\hocke\Desktop\School\1 Messing around with code\html\html\obj\Debug\net6.0\html.dll
+C:\Users\hocke\Desktop\School\1 Messing around with code\html\html\obj\Debug\net6.0\ref\html.dll
+C:\Users\hocke\Desktop\School\1 Messing around with code\html\html\obj\Debug\net6.0\html.pdb
+C:\Users\hocke\Desktop\School\1 Messing around with code\html\html\obj\Debug\net6.0\html.genruntimeconfig.cache

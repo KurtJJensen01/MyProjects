@@ -1,0 +1,2 @@
+﻿string text = " <!DOCTYPE html> <html> <head> <h1>You're Gay</h1> </head> <body> <h2>From Kurt</h2> </body> </html>";
+File.WriteAllText("Open this.html", text);
